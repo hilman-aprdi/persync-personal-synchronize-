@@ -1,6 +1,6 @@
 # Persync
 
-Persync adalah alat bantu arah bisnis berbasis AI untuk orang Indonesia yang sedang mengeksplorasi usaha mikro, side hustle, atau langkah awal membangun bisnis.
+Persync adalah alat bantu arah bisnis berbasis AI untuk siapa pun yang sedang mengeksplorasi usaha mikro, side hustle, atau langkah awal membangun bisnis.
 
 Persync memulai analisis dari kondisi pengguna: modal, waktu, keahlian, preferensi kerja, pengalaman menjual, pemahaman pasar, dan target penghasilan. Hasilnya membantu mempersempit pilihan dan menentukan eksperimen awal yang lebih realistis. Hasil analisis bukan jaminan pendapatan, keuntungan, atau keberhasilan bisnis, serta bukan pengganti nasihat hukum, pajak, keuangan, atau nasihat profesional lainnya.
 
@@ -10,7 +10,7 @@ Situs production: [https://persync.ai.id](https://persync.ai.id)
 
 Banyak daftar ide bisnis terlalu luas untuk langsung digunakan. Persync dibuat untuk membantu pengguna mengambil langkah awal yang lebih kecil dan praktis dengan menghubungkan sumber daya, batasan, dan tujuan mereka dengan arah bisnis yang mungkin dicoba.
 
-Produk ini paling relevan untuk mahasiswa, fresh graduate, karyawan full-time, freelancer, orang yang baru mulai berjualan, serta siapa pun yang ingin menguji usaha kecil dengan waktu atau modal terbatas.
+Produk ini relevan untuk mahasiswa, fresh graduate, karyawan full-time, freelancer, orang yang baru mulai berjualan, serta siapa pun yang ingin menguji usaha kecil dengan waktu atau modal terbatas.
 
 Persync tidak memiliki akun pengguna, tidak memverifikasi permintaan pasar, dan tidak menjalankan bisnis atas nama pengguna. Rekomendasi yang diberikan AI tetap perlu diperiksa berdasarkan calon pelanggan, biaya, aturan yang berlaku, dan kondisi pengguna sendiri.
 
@@ -161,7 +161,7 @@ Browser menyimpan riwayat analisis pada localStorage dengan key `persync_session
 
 ### Cookie kuota
 
-Server menggunakan cookie HttpOnly bernama `persync_daily_quota`. Payload bertanda tangan cookie mencatat tanggal dan jumlah penggunaan. Cookie ini tidak berisi input form atau hasil analisis. Cookie berlaku 24 jam, menggunakan `SameSite=Lax`, dan memakai `Secure` saat production. Perhitungan tanggal menggunakan zona waktu `Asia/Jakarta`.
+Server menggunakan cookie HttpOnly bernama `persync_daily_quota`. Payload bertanda tangan cookie mencatat tanggal dan jumlah penggunaan. Cookie ini tidak berisi input form atau hasil analisis. Cookie berlaku 24 jam, menggunakan `SameSite=Lax`, dan memakai `Secure` saat production. Jadwal reset mengikuti konfigurasi waktu layanan.
 
 ### Log dan layanan pihak ketiga
 
@@ -218,6 +218,7 @@ Pemeliharaan rutin:
 - Batas penggunaan berbasis cookie dan dapat berbeda antar-browser atau perangkat.
 - Server memvalidasi field wajib, tetapi belum memiliki moderasi konten komprehensif atau kebijakan panjang input server-side yang mendetail untuk setiap nilai.
 - Ketersediaan Gemini, kualitas output, harga, kuota provider, dan retensi provider berada di luar kendali langsung Persync.
+- Antarmuka saat ini masih menggunakan bahasa Indonesia, pilihan modal dalam rupiah, dan beberapa asumsi pasar lokal. Copy produk dapat digunakan secara umum, tetapi dukungan penuh untuk negara, mata uang, bahasa, dan konteks pasar lain belum tersedia.
 - Belum tersedia script automated test dan type-check TypeScript terpisah.
 - Repository ini tidak menjamin indexing production, traffic, uptime, atau kualitas hasil model tertentu.
 

@@ -82,7 +82,7 @@ export function SidebarContent({
           </div>
 
           <p className="mt-2.5 text-[11px] leading-4 text-white/38">
-            Reset otomatis setiap tengah malam WIB.
+            Reset otomatis setiap hari.
           </p>
         </div>
       </div>
