@@ -389,7 +389,7 @@ export function GeneratorForm() {
               <p className="text-[11px] text-white/38">Pilih minimal 1 bidang yang paling sesuai.</p>
             </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-2.5">
+            <div className="mt-4 grid grid-cols-1 gap-2.5 min-[380px]:grid-cols-2 sm:gap-3">
               {visibleSkillCards.map((skill) => {
                 const Icon = skill.icon;
                 const active = form.skillsInterests.includes(skill.label);
@@ -398,8 +398,9 @@ export function GeneratorForm() {
                   <button
                     key={skill.label}
                     type="button"
+                    aria-pressed={active}
                     onClick={() => toggleSkill(skill.label)}
-                    className={`group relative overflow-hidden rounded-[20px] border p-3.5 text-left transition-all duration-200 ${
+                    className={`group relative min-h-[60px] overflow-hidden rounded-[20px] border p-3 text-left transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/45 sm:min-h-[48px] sm:p-3.5 ${
                       active
                         ? "border-cyan-400/22 bg-[linear-gradient(135deg,rgba(34,211,238,0.08),rgba(96,165,250,0.08),rgba(255,255,255,0.02))] text-white shadow-[0_10px_24px_rgba(18,116,164,0.14)]"
                         : "border-white/7 bg-white/[0.02] text-white/72 hover:border-white/12 hover:bg-white/[0.04]"
@@ -410,8 +411,8 @@ export function GeneratorForm() {
                         active ? "opacity-100" : "opacity-0"
                       }`}
                     />
-                    <div className="relative z-10 flex min-h-[48px] items-center justify-between gap-2">
-                      <div className="flex min-w-0 items-center gap-2.5">
+                    <div className="relative z-10 flex min-h-[36px] items-start justify-between gap-2">
+                      <div className="flex min-w-0 flex-1 items-start gap-2.5">
                         <span
                           className={`inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-2xl border transition ${
                             active
@@ -422,7 +423,7 @@ export function GeneratorForm() {
                           <Icon className="h-3.5 w-3.5" strokeWidth={1.9} />
                         </span>
                         <p
-                          className={`line-clamp-2 text-sm font-medium leading-5 ${
+                          className={`min-w-0 flex-1 break-words text-sm font-medium leading-5 ${
                             active ? "text-white" : "text-white/76"
                           }`}
                         >
@@ -430,7 +431,7 @@ export function GeneratorForm() {
                         </p>
                       </div>
                       <span
-                        className={`inline-flex h-4.5 w-4.5 flex-shrink-0 items-center justify-center rounded-full border transition ${
+                        className={`mt-0.5 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full border transition ${
                           active
                             ? "border-cyan-300/24 bg-cyan-300/14 text-cyan-100"
                             : "border-white/8 bg-white/[0.02] text-transparent"
