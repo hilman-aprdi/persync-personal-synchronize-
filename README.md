@@ -4,7 +4,7 @@ Persync adalah alat bantu arah bisnis berbasis AI untuk siapa pun yang sedang me
 
 Persync memulai analisis dari kondisi pengguna: modal, waktu, keahlian, preferensi kerja, pengalaman menjual, pemahaman pasar, dan target penghasilan. Hasilnya membantu mempersempit pilihan dan menentukan eksperimen awal yang lebih realistis. Hasil analisis bukan jaminan pendapatan, keuntungan, atau keberhasilan bisnis, serta bukan pengganti nasihat hukum, pajak, keuangan, atau nasihat profesional lainnya.
 
-Situs production: [https://persync.ai.id](https://persync.ai.id)
+Situs production: [https://persync.vercel.app](https://persync.vercel.app)
 
 ## Gambaran proyek
 
@@ -126,16 +126,16 @@ Repository ini disiapkan untuk Vercel melalui `vercel.json`. Deploy project dari
 1. Import repository ke Vercel.
 2. Gunakan preset Next.js dan build command `npm run build`.
 3. Tambahkan `GEMINI_API_KEY` dan `QUOTA_SECRET` pada Vercel Production environment. Tambahkan variable Gemini opsional hanya jika ingin mengubah default.
-4. Deploy dan hubungkan domain production `persync.ai.id` di Vercel.
+4. Gunakan domain production `persync.vercel.app` di Vercel.
 5. Pastikan HTTPS aktif. Jika masih ada domain lama atau preview yang perlu diarahkan, atur redirect tersebut di luar kode aplikasi.
 6. Periksa halaman production berikut:
 
-   - `https://persync.ai.id/`
-   - `https://persync.ai.id/about`
-   - `https://persync.ai.id/terms`
-   - `https://persync.ai.id/privacy`
-   - `https://persync.ai.id/robots.txt`
-   - `https://persync.ai.id/sitemap.xml`
+   - `https://persync.vercel.app/`
+   - `https://persync.vercel.app/about`
+   - `https://persync.vercel.app/terms`
+   - `https://persync.vercel.app/privacy`
+   - `https://persync.vercel.app/robots.txt`
+   - `https://persync.vercel.app/sitemap.xml`
 
 7. Jalankan satu analisis terkontrol menggunakan data uji yang tidak sensitif. Pastikan request Gemini, cookie kuota, halaman hasil, dan riwayat browser berjalan sesuai harapan.
 
@@ -143,7 +143,7 @@ Jangan memasukkan API key, quota secret, atau data pengguna ke environment varia
 
 ## Privasi dan pengelolaan data
 
-Dokumen utama untuk pengguna adalah [Kebijakan Privasi](https://persync.ai.id/privacy) dan [Ketentuan Penggunaan](https://persync.ai.id/terms). Ringkasan berikut menjelaskan implementasi saat ini dan tidak menggantikan kedua dokumen tersebut.
+Dokumen utama untuk pengguna adalah [Kebijakan Privasi](https://persync.vercel.app/privacy) dan [Ketentuan Penggunaan](https://persync.vercel.app/terms). Ringkasan berikut menjelaskan implementasi saat ini dan tidak menggantikan kedua dokumen tersebut.
 
 ### Informasi yang dikirim
 
@@ -188,7 +188,7 @@ Sebelum mengikuti rekomendasi, periksa permintaan pelanggan, biaya, kebutuhan op
 
 Persync menyediakan informasi dan bantuan pengambilan keputusan untuk eksplorasi bisnis. Persync bukan lembaga keuangan, layanan investasi, penasihat hukum, penasihat pajak, atau pengganti layanan profesional lain yang mungkin diperlukan pengguna.
 
-Penggunaan layanan diatur oleh [Ketentuan Penggunaan](https://persync.ai.id/terms). Pengelolaan informasi dijelaskan dalam [Kebijakan Privasi](https://persync.ai.id/privacy). README ini tidak mencantumkan nama badan hukum, nomor registrasi, alamat kantor, sertifikasi, atau klaim kepatuhan regulasi karena informasi tersebut tidak tersedia di repository.
+Penggunaan layanan diatur oleh [Ketentuan Penggunaan](https://persync.vercel.app/terms). Pengelolaan informasi dijelaskan dalam [Kebijakan Privasi](https://persync.vercel.app/privacy). README ini tidak mencantumkan nama badan hukum, nomor registrasi, alamat kantor, sertifikasi, atau klaim kepatuhan regulasi karena informasi tersebut tidak tersedia di repository.
 
 ## Script dan pemeliharaan
 

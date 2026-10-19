@@ -13,7 +13,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const siteUrl = "https://persync.ai.id";
+const siteUrl = "https://persync.vercel.app";
 const pageTitle = "Persync | Arah Bisnis Realistis untuk Side Hustle";
 const pageDescription =
   "Temukan arah bisnis mikro atau side hustle berdasarkan modal, waktu, keahlian, dan kondisi nyata Anda.";

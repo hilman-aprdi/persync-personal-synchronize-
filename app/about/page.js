@@ -5,11 +5,11 @@ import { LegalPage, LegalSection } from "../../components/legal-page";
 export const metadata = {
   title: "Tentang Persync | Arah Bisnis yang Realistis",
   description: "Kenali cara Persync membantu menyusun arah bisnis mikro dan side hustle berdasarkan kondisi nyata pengguna.",
-  alternates: { canonical: "https://persync.ai.id/about" },
+  alternates: { canonical: "https://persync.vercel.app/about" },
   openGraph: {
     title: "Tentang Persync | Arah Bisnis yang Realistis",
     description: "Kenali cara Persync membantu menyusun arah bisnis mikro dan side hustle berdasarkan kondisi nyata pengguna.",
-    url: "https://persync.ai.id/about",
+    url: "https://persync.vercel.app/about",
   },
   twitter: {
     title: "Tentang Persync | Arah Bisnis yang Realistis",

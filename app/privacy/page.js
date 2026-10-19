@@ -3,11 +3,11 @@ import { LegalPage, LegalSection } from "../../components/legal-page";
 export const metadata = {
   title: "Kebijakan Privasi | Persync",
   description: "Penjelasan singkat tentang informasi yang diproses Persync, penyimpanan riwayat, cookie kuota, dan Google Gemini.",
-  alternates: { canonical: "https://persync.ai.id/privacy" },
+  alternates: { canonical: "https://persync.vercel.app/privacy" },
   openGraph: {
     title: "Kebijakan Privasi | Persync",
     description: "Penjelasan singkat tentang informasi yang diproses Persync, penyimpanan riwayat, cookie kuota, dan Google Gemini.",
-    url: "https://persync.ai.id/privacy",
+    url: "https://persync.vercel.app/privacy",
   },
   twitter: {
     title: "Kebijakan Privasi | Persync",

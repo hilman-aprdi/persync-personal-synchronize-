@@ -3,11 +3,11 @@ import { LegalPage, LegalSection } from "../../components/legal-page";
 export const metadata = {
   title: "Ketentuan Penggunaan | Persync",
   description: "Ketentuan penggunaan Persync, termasuk batasan AI, kuota gratis, dan tanggung jawab pengguna.",
-  alternates: { canonical: "https://persync.ai.id/terms" },
+  alternates: { canonical: "https://persync.vercel.app/terms" },
   openGraph: {
     title: "Ketentuan Penggunaan | Persync",
     description: "Ketentuan penggunaan Persync, termasuk batasan AI, kuota gratis, dan tanggung jawab pengguna.",
-    url: "https://persync.ai.id/terms",
+    url: "https://persync.vercel.app/terms",
   },
   twitter: {
     title: "Ketentuan Penggunaan | Persync",

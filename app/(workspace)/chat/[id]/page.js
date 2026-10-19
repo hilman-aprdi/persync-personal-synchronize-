@@ -7,7 +7,7 @@ export async function generateMetadata({ params }) {
     title: "Business Direction Result | Persync",
     description: "Baca kembali hasil analisis arah bisnis Persync.",
     alternates: {
-      canonical: `https://persync.ai.id/chat/${encodeURIComponent(resolvedParams.id)}`,
+      canonical: `https://persync.vercel.app/chat/${encodeURIComponent(resolvedParams.id)}`,
     },
     robots: {
       index: false,

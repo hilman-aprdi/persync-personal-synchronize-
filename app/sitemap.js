@@ -1,4 +1,4 @@
-const siteUrl = "https://persync.ai.id";
+const siteUrl = "https://persync.vercel.app";
 
 export default function sitemap() {
   return [
