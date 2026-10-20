@@ -389,7 +389,7 @@ export function GeneratorForm() {
               <p className="text-[11px] text-white/38">Pilih minimal 1 bidang yang paling sesuai.</p>
             </div>
 
-            <div className="mt-4 grid grid-cols-1 gap-2.5 min-[380px]:grid-cols-2 sm:gap-3">
+            <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3">
               {visibleSkillCards.map((skill) => {
                 const Icon = skill.icon;
                 const active = form.skillsInterests.includes(skill.label);
