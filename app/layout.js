@@ -23,6 +23,9 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   title: pageTitle,
   description: pageDescription,
+  verification: {
+    google: "BVbJYB1DfYeUOYi17bHflhynDJ11_SFZ_wDqnS5hVsw",
+  },
   alternates: {
     canonical: "/",
   },
