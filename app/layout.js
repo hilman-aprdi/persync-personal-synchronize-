@@ -24,7 +24,7 @@ export const metadata = {
   title: pageTitle,
   description: pageDescription,
   verification: {
-    google: "BVbJYB1DfYeUOYi17bHflhynDJ11_SFZ_wDqnS5hVsw",
+    google: "rAX9eRjgxEfjxaZJyxE_ZX9bYupHul2wmpNmcNR4jg4",
   },
   alternates: {
     canonical: "/",
